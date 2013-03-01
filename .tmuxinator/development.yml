@@ -1,0 +1,12 @@
+# ~/.tmuxinator/development.yml
+# you can make as many tabs as you wish...
+
+project_name: Tmuxinator
+project_root: ~/code/rails_project
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - emacs
+        - #empty, will just run plain bash
+  - console: # empty

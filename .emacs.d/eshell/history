@@ -1,0 +1,11 @@
+rails recipe-book
+rails new recipe-book
+ls
+cd Desktop/
+ls
+cd -
+ls
+cd recipe-book/
+cd ..
+cd recipe-book/
+pwd

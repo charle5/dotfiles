@@ -1,0 +1,25 @@
+[user]
+	name = charle5
+	email = example@example.com
+[core]
+	editor = emacs
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	visual = gitk
+[help]
+	autocorrect = 1
+[color]
+	ui = true
+[merge]
+        tool = extMerge
+[mergetool "extMerge"]
+        cmd = extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+        trustExitCode = false
+[diff]
+        external = extDiff
+[credential]
+	helper = osxkeychain
