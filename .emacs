@@ -44,3 +44,9 @@
           (lambda ()
             (setq indent-tabs-mode nil)
             (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+;; cpp formatting
+(c-set-style "stroustrup")
+(add-hook 'c-mode-hook
+          (lambda () "Set c-c c-c to comment-region"
+            (local-set-key "\c-c\C-c" 'comment-region)
+            (setq (comment-column 65))))
