@@ -37,8 +37,10 @@ source $ZSH/oh-my-zsh.sh
 
 # path customizations
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.ec2/bin:$PATH"
+export PATH="$HOME/scripts:$PATH"
 
 # ec2 customizations
 export EC2_HOME="$HOME/.ec2"
