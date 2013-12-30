@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
 function doIt() {
