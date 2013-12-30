@@ -35,20 +35,12 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# path customizations
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/usr/local/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.ec2/bin:$PATH"
-export PATH="$HOME/scripts:$PATH"
-
-# ec2 customizations
-export EC2_HOME="$HOME/.ec2"
-export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
-export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home/"
-export EC2_URL="https://ec2.us-west-1.amazonaws.com"
-export EC2_INSTANCE="i-dfbd7887"
+# path customizations -- looks like boxen takes care of this?
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/usr/local/bin:$PATH"
+# export PATH="$HOME/bin:$PATH"
+# export PATH="$HOME/.ec2/bin:$PATH"
+# export PATH="$HOME/scripts:$PATH"
 
 # other misc customizations
 eval "$(rbenv init - zsh)"

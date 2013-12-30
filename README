@@ -1,12 +1,5 @@
 installation:
 
-git clone git://github.com/charle5/dotfiles.git ~/.dotfiles
-
-create symlinks:
-
-ln -s ~/.dotfiles/.emacs ~/.emacs
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.oh-my-zsh ~/.oh-my-zsh
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/.tmuxinator ~/.tmuxinator
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+$ git clone git://github.com/charle5/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
+$ ./install.sh
