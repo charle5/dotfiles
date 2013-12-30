@@ -1,5 +1,6 @@
 installation:
 
-$ git clone git://github.com/charle5/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
-$ ./install.sh
+$ git clone git://github.com/charle5/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./bootstrap.sh
+
+on fresh installs (or to update defaults):
+$ ./.osx
