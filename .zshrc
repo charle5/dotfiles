@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rake="noglob rake"
-alias emacs="/usr/local/Cellar/emacs/24.2/bin/emacs-24.2"
+alias emacs="/opt/boxen/homebrew/bin/emacs"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -51,3 +51,6 @@ export RUBYOPT=rubygems
 
 # trying to fix errors 
 setopt extended_glob
+
+# adding for boxen
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
