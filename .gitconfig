@@ -3,6 +3,7 @@
 	email = devin.holloway+charle5@gmail.com
 [core]
 	editor = emacs
+	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
 	br = branch
