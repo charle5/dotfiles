@@ -4,3 +4,7 @@ $ git clone git://github.com/charle5/dotfiles.git ~/.dotfiles && cd ~/.dotfiles 
 
 on fresh installs (or to update defaults):
 $ ./.osx
+
+# took crontab stuff from https://github.com/willfarrell/dotCrontab
+
+# todo consider replacing rsync in bootstrap w/ ln -s
