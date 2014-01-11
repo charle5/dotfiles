@@ -1,2 +1,2 @@
 0 * * * * sh .crontab/scripts/crontab-update.sh 1>> crontab.log 2>&1 # auto inject any crontab changes
-1 0 * * * /opt/boxen/homebrew/bin/brew update 1>> crontab.log 2>&1 # Update brew repos nightly
+1 0 * * * sh .crontab/scripts/brew-update.sh 1>> crontab.log 2>&1 # Update brew repos nightly
