@@ -146,8 +146,11 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-# Disable “natural” (Lion-style) scrolling
-#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# Disable capslock key (ty https://github.com/slawekkolodziej/dotfiles/blob/master/scripts/osx.sh)
+vendorId=`ioreg -n IOHIDKeyboard -r | sed -n 's/.*"VendorID" = \([0-9]*\)/\1/p'`
+productId=`ioreg -n IOHIDKeyboard -r | sed -n 's/.*"ProductID" = \([0-9]*\)/\1/p'`
+defaults -currentHost write NSGlobalDomain com.apple.keyboard.modifiermapping.$vendorId-$productId-0 -array \
+  '<dict><key>HIDKeyboardModifierMappingDst</key><integer>-1</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
