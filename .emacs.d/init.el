@@ -27,6 +27,10 @@
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 
+;; dash doc stuff
+;;(require 'dash-at-point)
+;;(global-set-key (kbd "C-c d") 'dash-at-point)
+
 ;; (i wonder if there is a better way to generate the load list here)
 ;; the commands:
 ;; C-u M-! $ ls custom/
@@ -36,12 +40,15 @@
 (load "00common_setup.el")
 (load "ack-and-a-half.el")
 (load "autocomplete.el")
+(load "dash-at-point-kbd.el")
 (load "flx-ido.el")
 (load "google-c-style.el")
 (load "haml-mode.el")
 (load "magit.el")
 (load "rinari.el")
 (load "ruby-electric.el")
+(load "saveplace.el")
+(load "whitespace.el")
 (load "yasnippet.el")
 (load "zenburn.el")
 (load "ido.el")
