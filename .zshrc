@@ -42,6 +42,9 @@ source $ZSH/oh-my-zsh.sh
 # export PATH="$HOME/.ec2/bin:$PATH"
 # export PATH="$HOME/scripts:$PATH"
 
+# add cask (emacs) to path
+export PATH="$HOME/.cask/bin:$PATH"
+
 # other misc customizations
 eval "$(rbenv init - zsh)"
 export TERM=xterm-256color

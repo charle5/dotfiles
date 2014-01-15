@@ -1,0 +1,6 @@
+[submodule ".cask"]
+	path = .cask
+	url = git@github.com:cask/cask.git
+[submodule "rinari"]
+	path = rinari
+	url = git://github.com/eschulte/rinari.git
