@@ -5,10 +5,10 @@ $ git clone git://github.com/charle5/dotfiles.git ~/.dotfiles && cd ~/.dotfiles 
 on fresh installs (or to update defaults):
 $ ./.osx
 
-# using submodules now. starting w/ .cask. 
+# using submodules now. starting w/ .cask.
 
 # took crontab stuff from https://github.com/willfarrell/dotCrontab
 
 # [todo] consider replacing rsync in bootstrap w/ ln -s
 # [todo] make omzsh submodule
-
+# [todo] consider using jimeh/.emacs.d/keybindings.el if i'm gonna add more. (also look at the structure for other stuff.)

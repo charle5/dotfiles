@@ -3,7 +3,7 @@
 (add-to-list 'default-frame-alist '(top . 0))
 (add-to-list 'default-frame-alist '(height . 45))
 (add-to-list 'default-frame-alist '(width . 175))
- 
+
 ;; invoke M-x w/out the alt key
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
@@ -22,6 +22,8 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
+;; shortcut for calling helm-dictionary
+(global-set-key (kbd "C-c w") 'helm-dictionary)
 
 ;; copy the entire contents of a file using emacs copy mode in tmux.
 ;; emacs into a file in tmux, press 'C-c t' then '[prefix] C-c' to copy. paste to wherever!
@@ -40,3 +42,7 @@
 ;; Instruct Emacs to use emacs term-info not system term info
 ;; http://stackoverflow.com/questions/8918910/weird-character-zsh-in-emacs-terminal
 (setq system-uses-terminfo nil)
+
+;; make man open in the current buffer
+(custom-set-variables
+ '(Man-notify-method (quote pushy)))

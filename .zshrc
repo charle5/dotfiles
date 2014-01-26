@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rake="noglob rake"
 alias emacs="/opt/boxen/homebrew/bin/emacs"
+alias git="/opt/boxen/homebrew/bin/hub"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -46,8 +47,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.cask/bin:$PATH"
 
 # other misc customizations
-eval "$(rbenv init - zsh)"
+eval "$(rbenv init -)"
 export TERM=xterm-256color
+
 
 # adding rubygems to path
 export RUBYOPT=rubygems
